@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps|Open+Sans:400,700,800|Anton');
+
+$ff-open: 'Open Sans', sans-serif;
+$ff-anton: 'Anton', sans-serif;
+$ff-s: 'Merriweather', serif;
+$ff-ss: 'Six Caps', sans-serif;
+
+$fw-n: 400; // Font wieght normal
+$fw-b: 900; // Font weight BOLD
+
+$letter-spacing: 10px;
+
+
+@mixin sans-serif($fs, $ls: .15em, $color: $gray, $tt: uppercase, $lh: 1) {
+    font-family: $ff-ss;
+    font-size: $fs;
+    font-weight: $fw-n;
+    letter-spacing: $ls;
+    color: $color;
+    text-transform: $tt;
+    line-height: $lh;
+}

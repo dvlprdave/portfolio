@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>David Quick</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font Awesome 5 -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+<body>
+  
+      
+  <header>
+    <!-- Popout Navigation -->
+      <nav class="navbar" role="navigation">
+        <!-- Hamburger Menu Button -->
+        <a href="#" class="nav-toggle" onclick="openSlideMenu()">
+          <i class="fas fa-bars nav-toggle"></i>
+        </a>
+      </nav>
+      
+      <div id="side-menu" class="side-nav">
+        <div class="close-btn">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+
+        <ul class="nav-ul">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    <div class="welcome">
+      <h1><span>David Quick</span>Creative Developer</h1>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Intro Section  -->
+  <section class="intro">
+    <div class="intro-left">
+      <h2>Build</h2>
+    </div>
+
+    <div class="intro-middle">
+      <h2>Making it happen</h2>
+      <blockquote>Go as far as you can see; when you get there, you'll be able to see more. <br> - Thomas Carlyle</blockquote>
+    </div>
+
+    <div class="intro-right">
+      <h2>Create</h2>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+
+  <section class="about-me">
+    <img class="about-img" src="img/self-portrait-3.jpg" alt="A picture of Joe Portfolio">
+
+    <h1 class="about-title">Dave's Portfolio</h1>
+    <h2 class="about-subtitle">Developer & Photographer</h2>
+
+    <div class="about-text">
+      <p>Hello. I'm David, a self taught front-end <span>Web Developer</span> from NYC. I design and build for the web. Inspiration is everywhere and there is nothing more satisfying than creating micro visions that unfold without limits. My core skills are <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheet">CSS</abbr>, and JavaScript.
+      </p>
+      <br>
+      <p>As a father of two, family is the force that drives me. My mission is to construct myself on the basis of learning in order to provide platforms for my children and others to reach greater experiences.  </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section  -->
+
+  <section id="portfolio" class="portfolio">
+    <h1>My Work</h1>
+    <div class="portfolio-items">
+
+      <!-- Portfolio item 1 -->
+      <figure class="portfolio-item featured">
+        <img src="img/coffee-house-browser.png" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Coffee-House</h2>
+          <p class="portfolio-description">Appilicous is a landing page template for your existing or upcoming app. Built on HTML, CSS/SASS. </p>
+          <a href="https://dvlprdave.github.io/coffee-house/" class="portfolio-link">View Project</a>
+        </figcaption>
+      </figure>
+
+      <!-- Portfolio item 2 -->
+      <figure class="portfolio-item">
+        <img src="img/appilicous-browser.png" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Appilicous</h2>
+          <p class="portfolio-description">Appilicous is a landing page template for your existing or upcoming app. Built on HTML, CSS/SASS. </p>
+          <a href="https://dvlprdave.github.io/Applicious/" class="portfolio-link">View Project</a>
+        </figcaption>
+      </figure>
+
+      <!-- Portfolio item 3 -->
+      <figure class="portfolio-item">
+          <img src="img/nexter-browser.png" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">Nexter</h2>
+            <p class="portfolio-description">Landing page for Nexter, a luxury home selling company. This page focuses on the use of CSS Grid to implement a non traditional layout, while focusing on minimal code.</p>
+            <a href="https://dvlprdave.github.io/nexter/" class="portfolio-link">View Project</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 4 -->
+      <figure class="portfolio-item">
+          <img src="img/google-home-browser.png" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">Google Home</h2>
+            <p class="portfolio-description">Google Home product display page. Built using HTML, CSS, Javascript, Sass and Bootstrap.</p>
+            <a href="#" class="portfolio-link">View Project</a>
+          </figcaption>
+        </figure>
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <form action="mailto:devdavee@gmail.com">
+      <label for="name" class="name">Name:
+        <input type="text" id="name">
+      </label>
+      
+
+      <label for="email" class="email">Email:
+        <input type="email">
+      </label>
+
+      <label for="message" class="message">Messages:
+        <textarea name="" id="messages" cols="30" rows="10"></textarea>
+      </label>
+
+      <input class="button form-button" type="submit" value="SEND">
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>More work / Social Media</p>
+    <div class="social-icons">
+
+      <a href="https://codepen.io/this-dvlpr/" target="_blank" class="social-icon"><img src="img/codepen.png" alt="codepen"></a>
+      
+      <a href="https://www.instagram.com/this.dvlpr/" target="blank" class="social-icon"><img src="img/instagram.svg" alt="twitter"></a>
+      
+      <a href="https://github.com/dvlprdave" target="blank" class="social-icon"><img src="img/github.svg" alt="twitter"></a>
+    </div>
+
+    <p class="copyright">Copyright 2017 David Quick</p>
+  </footer>
+
+  <script src="javascript/nav.js"></script>
+</body>
+</html>

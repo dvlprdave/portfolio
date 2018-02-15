@@ -1,0 +1,102 @@
+.portfolio {
+    text-align: center;
+    background: $deep-gray;
+    padding: 5em 0;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    @include container($max-width: 60em);
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    img {
+        display: block; // removes white space underneath
+        width: 100%;
+    }
+
+    figcaption {
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 2em;
+        background: rgba($dark-blue, .95);
+        color: $white;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        transition: top ease-in-out 250ms;
+    }
+
+    &:hover figcaption,
+    &:focus figcaption {
+        top: 0;
+    }
+}
+
+.portfolio-title {
+    color: $white;
+    font-size: 2.5em;
+    margin-bottom: auto; // Fills up space and pushes everything down
+
+    .featured & {
+        font-size: 5rem;
+    }
+}
+
+.portfolio-description {
+    
+}
+
+.portfolio-link {
+    color: $white;
+    font-weight: $fw-b;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 3px solid $white;
+    align-self: flex-start;
+
+    &::after {
+        content: url ('../img/arrow.svg');
+        display: inline-block;
+        color: $white;
+        height: 1em;
+        width: 1em;
+        margin-left: .5em;
+    }
+}
+
+@supports (display: grid) {
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        }
+    }
+
+    .featured {
+
+        .portfolio-title {
+            font-size: 5rem;
+        }
+
+        .portfolio-description {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+        }
+    }

@@ -28,7 +28,7 @@ h1 {
     // font-size: 10vw;
 
     @include mquery {
-        font-size: 4.25rem;
+        font-size: 3.25rem;
     }
 
     @media screen and (max-width: 350px) {

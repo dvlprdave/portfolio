@@ -44,16 +44,18 @@
 
 .portfolio-title {
     color: $white;
-    font-size: 2.5em;
+    font-size: 2.7rem;
     margin-bottom: auto; // Fills up space and pushes everything down
-
-    .featured & {
-        font-size: 5rem;
-    }
 }
 
-.portfolio-description {
-    
+@media screen and (max-width: 600px) {
+    .portfolio-title {
+        font-size: 2.3rem;
+    }
+
+    .portfolio-description {
+        font-size: 1rem;
+    }
 }
 
 .portfolio-link {
@@ -79,17 +81,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1em;
-        }
-    }
-
-    .featured {
-
-        .portfolio-title {
-            font-size: 5rem;
-        }
-
-        .portfolio-description {
-            display: block;
         }
     }
 

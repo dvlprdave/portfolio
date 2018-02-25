@@ -23,6 +23,13 @@
     }
 }
 
+// Only show nav icon below 800px
+@media screen and (min-width: 50em) {
+    .navbar {
+        display: none;
+    }
+}
+
 .side-nav {
     position: fixed;
     width: 0;

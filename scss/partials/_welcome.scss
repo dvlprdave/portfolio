@@ -110,10 +110,10 @@
             font-size: 5.5rem;
             display: block;
             color: $white;
-            font-weight: 800;
+            font-weight: 600;
 
             @include mquery {
-                font-size: 10vw; // Will grow with screen
+                font-size: 8vw; // Will grow with screen
             }
         }
     }
@@ -130,5 +130,9 @@
             padding: 10px;
             
         }
+    }
+
+    @media screen and (max-width: 50em) {
+        display: none;
     }
 }

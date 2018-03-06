@@ -7,7 +7,7 @@
 .portfolio-items {
     display: flex;
     flex-wrap: wrap;
-    @include container($max-width: 60em);
+    @include container($max-width: 50em);
 }
 
 .portfolio-item {

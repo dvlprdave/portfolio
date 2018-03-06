@@ -65,22 +65,6 @@ Intro Media Query
 
 @media screen and (max-width: 760px) {
     .intro {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, minmax(200px, 1fr)) 1fr ;
-    }
-
-    .intro-left {
-        order: 1;
-        background: linear-gradient(180deg, $dark-blue, $onyx);
-    }
-
-    .intro-right {
-        order: 2;
-        background: linear-gradient(360deg, $dark-blue, $onyx);
-    }
-
-    .intro-middle {
-        order: 3;
+        display: none;
     }
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>David Quick</title>
+  <title>David Quick | Front End Web Developer</title>
   <link rel="stylesheet" href="css/main.css">
   <!-- Font Awesome 5 -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
@@ -36,15 +36,28 @@
       </div>
 
     <div class="welcome">
-      <h1><span>David Quick</span>Creative Developer</h1>
-
-      <nav class="nav">
+      <nav class="nav"> <!-- Standard Navigation -->
         <ul>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
+
+      <div class="intro-p">
+        <h1>
+          Hello! I'm David. A creative
+          <br> developer from New York.
+          <br> I build for the web.
+        </h1>
+      </div>
+      
     </div>
   </header>
 
@@ -52,10 +65,19 @@
   <!-- Portfolio Section  -->
   
   <section id="portfolio" class="portfolio">
-    <h1>My Work</h1>
+    <h1 class="section-heading">My Work</h1>
     <div class="portfolio-items">
-  
       <!-- Portfolio item 1 -->
+      <figure class="portfolio-item featured">
+        <img src="img/alien-covenant-browser.png" alt="screenshot of alien covenant website">
+        <figcaption>
+          <h2 class="portfolio-title">Alien-Covenant</h2>
+          <p class="portfolio-description">A tribute site to the movie Alien Covenant. This was a personal project I built using HTML, CSS, and Sass. The premise was to build something I loved while implementing CSS animations. </p>
+          <a href="https://dvlprdave.github.io/alien/" class="portfolio-link">View Project</a>
+        </figcaption>
+      </figure>
+
+      <!-- Portfolio item 2 -->
       <figure class="portfolio-item featured">
         <img src="img/coffee-house-browser.png" alt="screenshot of coffee house website">
         <figcaption>
@@ -65,7 +87,7 @@
         </figcaption>
       </figure>
   
-      <!-- Portfolio item 2 -->
+      <!-- Portfolio item 3 -->
       <figure class="portfolio-item">
         <img src="img/appilicous-browser.png" alt="Screenshot of appilicious website">
         <figcaption>
@@ -75,7 +97,7 @@
         </figcaption>
       </figure>
   
-      <!-- Portfolio item 3 -->
+      <!-- Portfolio item 4 -->
       <figure class="portfolio-item">
         <img src="img/nexter-browser.png" alt="portfolio item">
         <figcaption>
@@ -86,7 +108,7 @@
         </figcaption>
       </figure>
   
-      <!-- Portfolio item 4 -->
+      <!-- Portfolio item 5 -->
       <figure class="portfolio-item">
         <img src="img/google-home-browser.png" alt="Screenshot of google home website">
         <figcaption>
@@ -99,51 +121,75 @@
   
   </section>
   
+  <!-- About Me Section -->
+  
+  <section id="about-me" class="about-me">
+    <img class="about-img" src="img/self-portrait-3.jpg" alt="An image of David Quick">
+  
+    <h1 class="about-title">Dave's Portfolio</h1>
+    <h2 class="about-subtitle">Developer & Photographer</h2>
+  
+    <div class="about-text">
+      <p>Hello. I'm David, a self taught front-end
+        <span>Web Developer</span> from NYC. I design and build for the web. I'm fueled by the obsession to create and code. My core
+        skills are
+        <abbr title="Hypertext Markup Language">HTML</abbr>,
+        <abbr title="Cascading Style Sheet">CSS</abbr>, and JavaScript.
+      </p>
+      <br>
+      <p>As a father of two, family is the force that drives me. My mission is to construct myself on the basis of learning in
+        order to provide platforms for my children and others to reach greater experiences. </p>
+    </div>
+  </section>
+
   <!-- Intro Section  -->
   <section class="intro">
     <div class="intro-left">
-      <h2>Build</h2>
+      <h2>Achievments</h2>
+
+      <ul class="achievments">
+        <li>
+          <ul class="treehouse">
+            <li><span id="treehouse-txt">Treehouse</span></li>
+            <li>HTML/CSS Track</li>
+            <li>JavaScript Track</li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="udemy">
+            <li><span id="udemy-txt">Udemy</span></li>
+            <li>Web Developer Bootcamp</li>
+            <li>Advanced Web Developer Bootcamp</li>
+            <li>Advanced CSS and Sass</li>
+            <li>Modern JavaScript from the beginning</li>
+            <li>JavaScript: Understanding the wierd parts</li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
     <div class="intro-middle">
       <h2>Making it happen</h2>
-      <blockquote>Go as far as you can see; when you get there, you'll be able to see more. <br> - Thomas Carlyle</blockquote>
+      <blockquote>Imagination is more important than knowledge. For knowledge is limited to all we now know and understand. While imagination embraces the entire world, and all there ever will be to know and understand.<br> - Albert Einstien</blockquote>
     </div>
 
     <div class="intro-right">
-      <h2>Create</h2>
+      <h2>Interests</h2>
+      <p>If it draws me in, I'm in!</p>
+      <ul class="interest-list">
+        <li><p>The web isn't the only thing I develop for. Photography is a daily drive for me. I shoot, develop, and process 35mm and 120mm
+        film.</p></li>
+        <li><p>I powerlift and train for strength conditioning.</p></li>
+        <li><p>Cinematography is in my blood. To call me a movie buff would be an understatment.</p></li>
+      </ul>
     </div>
   </section>
-
-  <!-- About Me Section -->
-
-  <section id="about-me" class="about-me">
-    <img class="about-img" src="img/self-portrait-3.jpg" alt="An image of David Quick">
-
-    <h1 class="about-title">Dave's Portfolio</h1>
-    <h2 class="about-subtitle">Developer & Photographer</h2>
-
-    <div class="about-text">
-      <p>Hello. I'm David, a self taught front-end <span>Web Developer</span> from NYC. I design and build for the web. I'm fueled by the obsession to create and code. My core skills are <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheet">CSS</abbr>, and JavaScript.
-      </p>
-      <br>
-      <p>As a father of two, family is the force that drives me. My mission is to construct myself on the basis of learning in order to provide platforms for my children and others to reach greater experiences.  </p>
-    </div>
-  </section>
-
-  <!-- <section class="achievments">
-    <h2>Achievments</h2>
-    <p><span>Udemy:</span></p>
-    <p><span>Team Treehouse:</span></p>
-    <p>Freecodecamp:</p>
-  </section> -->
-
- 
 
   <!-- Contact Section -->
 
   <section id="contact" class="contact">
-    <h1>Contact Me</h1>
+    <h1 class="section-heading">Contact Me</h1>
     <form action="mailto:devdavee@gmail.com">
       <label for="name" class="name">Name:
         <input type="text" id="name">

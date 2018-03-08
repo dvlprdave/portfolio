@@ -1,9 +1,11 @@
 .intro {
     display: flex;
     color: rbga($white, .7);
+    height: 100%;
 
     h2 {
         color: $white;
+        margin: 0;
 
         &::after {
             content: '';
@@ -11,15 +13,14 @@
             height: 1px;
             background: rgba($white, .5);
             display: block;
-            margin: 1em auto 0;
+            margin: .3em auto 0;
         }
     }
 
     @supports (display: grid) {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }
-
 }
 
 
@@ -39,32 +40,36 @@ Intro left, middle, right
 .intro-left,
 .intro-right {
     // background: #40434e;
-    display: block; // removes white space under images 
+    // display: block; // removes white space under images 
     background: linear-gradient(100deg, $dark-blue, $onyx);
     min-height: 100%;
     min-width: 100%;
     text-align: center;
 
-    h2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h2, ul {
+        padding: 1em;
     }
-    
 }
 
 .intro-left {
     background: linear-gradient(235deg, $dark-blue, $onyx);
+    
+        #treehouse-txt, #udemy-txt {
+            color: $white;
+            font-weight: bold;
+
+            @include mquery {
+                font-size: 1.2rem;
+            }
+        }
 }
 
-/***************************************
-Intro Media Query
-*********************************/
-
-@media screen and (max-width: 760px) {
-    .intro {
-        display: none;
-    }
+.intro-right {
+   .interest-list {
+       padding: 0 2em 2em 2em;
+   }
 }

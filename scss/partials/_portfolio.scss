@@ -33,6 +33,7 @@
         text-align: left;
         display: flex;
         flex-direction: column;
+        height: 100%;
         transition: top ease-in-out 250ms;
     }
 
@@ -64,7 +65,9 @@
     font-size: 1.1rem;
     text-decoration: none;
     border-bottom: 3px solid $white;
+    justify-self: flex-end;
     align-self: flex-start;
+    height: 100%;
 
     &::after {
         content: url ('../img/arrow.svg');

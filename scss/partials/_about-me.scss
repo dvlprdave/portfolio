@@ -41,7 +41,7 @@
 .about-text { 
     grid-row: 3 / 4;
 
-    span {
+    .accent-text {
         background-color: $accent;
         color: $white;
     }

@@ -131,11 +131,13 @@
         width: 100%;
 
             h1 {
+            font-family: $ff-open;
             font-size: 3.8vw;
             font-weight: $fw-n;
             color: $white;
             line-height: 1.3;
             text-align: justify;
+            text-transform: uppercase;
             padding-left: 1em;
         }
     }

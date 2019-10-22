@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,36 @@
   <!-- Font Awesome 5 -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
+
 <body>
-  
-      
+
+
   <header>
     <!-- Popout Navigation -->
-      <nav class="navbar" role="navigation">
-        <!-- Hamburger Menu Button -->
-        <a href="#" class="nav-toggle" onclick="openSlideMenu()">
-          <i class="fas fa-bars nav-toggle"></i>
-        </a>
-      </nav>
-      
-      <div id="side-menu" class="side-nav">
-        <div class="close-btn">
-          <a href="#" class="btn-close" onclick="closeSlideMenu()">
-            <i class="fas fa-times"></i>
-          </a>
-        </div>
+    <nav class="navbar" role="navigation">
+      <!-- Hamburger Menu Button -->
+      <a href="#" class="nav-toggle" onclick="openSlideMenu()">
+        <i class="fas fa-bars nav-toggle"></i>
+      </a>
+    </nav>
 
-        <ul class="nav-ul">
-          <li><a href="#portfolio" onclick="closeSlideMenu()">Portfolio</a></li>
-          <li><a href="#about-me" onclick="closeSlideMenu()">About</a></li>
-          <li><a href="#contact" onclick="closeSlideMenu()">Contact</a></li>
-        </ul>
+    <div id="side-menu" class="side-nav">
+      <div class="close-btn">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">
+          <i class="fas fa-times"></i>
+        </a>
       </div>
 
+      <ul class="nav-ul">
+        <li><a href="#portfolio" onclick="closeSlideMenu()">Portfolio</a></li>
+        <li><a href="#about-me" onclick="closeSlideMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeSlideMenu()">Contact</a></li>
+      </ul>
+    </div>
+
     <div class="welcome">
-      <nav class="nav"> <!-- Standard Navigation -->
+      <nav class="nav">
+        <!-- Standard Navigation -->
         <ul>
           <li>
             <a href="#portfolio">Portfolio</a>
@@ -53,103 +56,112 @@
       <div class="intro-p">
         <h1>
           Hello! <br>
-          I'm David. A creative <br> 
+          I'm David. A creative <br>
           developer from New York.
         </h1>
       </div>
-      
+
     </div>
   </header>
 
   <!-- About Me Section -->
-  
+
   <section id="about-me" class="about-me">
     <img class="about-img" src="img/self-portrait-3.jpg" alt="An image of David Quick">
-  
+
     <h1 class="about-title">Dave's Portfolio</h1>
     <h2 class="about-subtitle">Developer</h2>
-  
+
     <div class="about-text">
       <p>I'm a front-end
-        <span class="accent-text">Web Developer</span> from NYC with a passion for rich web experiences & web apps. I firmly believe in fostering your passion and building things that are an extension of your imagination.
+        <span class="accent-text">Web Developer</span> from NYC with a passion for rich web experiences & web apps. I
+        firmly believe in fostering your passion and building things that are an extension of your imagination.
       </p>
 
       <br>
 
-      <p>My primary focuses are 
+      <p>My primary focuses are
         <span class="accent-text">JavaScript</span>,
         <span class="accent-text">React</span>, and
-        <span class="accent-text">Gatsby</span>. Take a look around at a few of the things I've built and enjoy! I also run a blog over at <a class="accent-text" href="https://papabearcodes.com/">PapaBearCodes</a> where I share development aids.
+        <span class="accent-text">Gatsby</span>. Take a look around at a few of the things I've built and enjoy! I also
+        run a blog over at <a class="accent-text" href="https://papabearcodes.com/">PapaBearCodes</a> where I share
+        development aids.
       </p>
     </div>
   </section>
 
   <!-- Portfolio Section  -->
-  
+
   <section id="portfolio" class="portfolio">
     <h1 class="section-heading">My Work</h1>
     <div class="portfolio-items">
 
       <!-- Portfolio item 1 -->
       <figure class="portfolio-item featured">
-        <img src="img/papabearcodes.png" alt="screenshot of semantic-house website">
+        <img src="img/color-burst.jpg" alt="screenshot of website">
         <figcaption>
           <h2 class="portfolio-title">Papabearcodes</h2>
-          <p class="portfolio-description">A blog created to assist those learning web development. Created using Gatsby/ React/ Styled Components. </p>
+          <p class="portfolio-description">A blog created to assist those learning web development. Created using
+            Gatsby/ React/ Styled Components. </p>
           <a href="https://papabearcodes.com/" class="portfolio-link" target="_blank">View Project</a>
         </figcaption>
       </figure>
 
       <!-- Portfolio item 2 -->
       <figure class="portfolio-item featured">
-        <img src="img/Smart-Brain.png" alt="screenshot of semantic-house website">
+        <img src="img/smart-capture.jpg" alt="screenshot of website">
         <figcaption>
           <h2 class="portfolio-title">Smart Capture</h2>
-          <p class="portfolio-description">App used to capture faces from photos with image recognition API, custom Node server, and PostgreSQL database. </p>
+          <p class="portfolio-description">App used to capture faces from photos with image recognition API, custom Node
+            server, and PostgreSQL database. </p>
           <a href="https://smart-capture.herokuapp.com/" class="portfolio-link" target="_blank">View Project</a>
         </figcaption>
       </figure>
 
       <!-- Portfolio item 3 -->
       <figure class="portfolio-item featured">
-        <img src="img/Alien-Covenant.png" alt="screenshot of alien covenant website">
+        <img src="img/lights-out.jpg" alt="screenshot of website">
         <figcaption>
           <h2 class="portfolio-title">Alien-Covenant</h2>
-          <p class="portfolio-description">A tribute site to the movie Alien Covenant. Built using HTML, CSS, and Sass. Heavy focus on CSS animations </p>
+          <p class="portfolio-description">A tribute site to the movie Alien Covenant. Built using HTML, CSS, and Sass.
+            Heavy focus on CSS animations </p>
           <a href="https://dvlprdave.github.io/alien/" class="portfolio-link" target="_blank">View Project</a>
         </figcaption>
       </figure>
-  
+
       <!-- Portfolio item 4 -->
       <figure class="portfolio-item featured">
-        <img src="img/Coffee-house.jpg" alt="screenshot of coffee house website">
+        <img src="img/nissan-heritage.jpg" alt="screenshot of coffee house website">
         <figcaption>
           <h2 class="portfolio-title">Coffee-House</h2>
-          <p class="portfolio-description">Coffee House is a site for a fictional coffee shop. Built with HTML, CSS/Sass. Primarily built on CSS Grid.</p>
+          <p class="portfolio-description">Coffee House is a site for a fictional coffee shop. Built with HTML,
+            CSS/Sass. Primarily built on CSS Grid.</p>
           <a href="https://dvlprdave.github.io/coffee-house/" class="portfolio-link" target="_blank">View Project</a>
         </figcaption>
       </figure>
-  
+
       <!-- Portfolio item 5 -->
       <figure class="portfolio-item">
-        <img src="img/Appilicous.png" alt="Screenshot of appilicious website">
+        <img src="img/nexter.jpg" alt="Screenshot of appilicious website">
         <figcaption>
           <h2 class="portfolio-title">Appilicous</h2>
-          <p class="portfolio-description">Appilicous is a landing page template for your existing or upcoming app. Built on HTML, CSS/Sass. </p>
+          <p class="portfolio-description">Appilicous is a landing page template for your existing or upcoming app.
+            Built on HTML, CSS/Sass. </p>
           <a href="https://dvlprdave.github.io/Applicious/" class="portfolio-link" target="_blank">View Project</a>
         </figcaption>
       </figure>
-  
+
       <!-- Portfolio item 6 -->
       <figure class="portfolio-item">
         <img src="img/Nexter.png" alt="portfolio item">
         <figcaption>
           <h2 class="portfolio-title">Nexter</h2>
-          <p class="portfolio-description">Landing page for Nexter, a luxury home selling company. This page focuses on the use of CSS Grid. </p>
+          <p class="portfolio-description">Landing page for Nexter, a luxury home selling company. This page focuses on
+            the use of CSS Grid. </p>
           <a href="https://dvlprdave.github.io/nexter/" class="portfolio-link" target="_blank">View Project</a>
         </figcaption>
       </figure>
-  
+
       <!-- <figure class="portfolio-item">
         <img src="img/Google-home.png" alt="Screenshot of google home website">
         <figcaption>
@@ -159,7 +171,7 @@
         </figcaption>
       </figure>
     </div> -->
-  
+
   </section>
 
   <!-- Proposal Section  -->
@@ -214,7 +226,7 @@
       <label for="name" class="name">Name:
         <input type="text" id="name">
       </label>
-      
+
 
       <label for="email" class="email">Email:
         <input type="email">
@@ -233,11 +245,14 @@
     <p>More work / Social Media</p>
     <div class="social-icons">
 
-      <a href="https://codepen.io/this-dvlpr/" target="_blank" class="social-icon"><img src="img/codepen.png" alt="codepen icon"></a>
-      
-      <a href="https://www.instagram.com/papabearcodes/" target="blank" class="social-icon"><img src="img/instagram.svg" alt="instagram icon"></a>
-      
-      <a href="https://github.com/dvlprdave" target="blank" class="social-icon"><img src="img/github.svg" alt="twitter icon"></a>
+      <a href="https://codepen.io/this-dvlpr/" target="_blank" class="social-icon"><img src="img/codepen.png"
+          alt="codepen icon"></a>
+
+      <a href="https://www.instagram.com/papabearcodes/" target="blank" class="social-icon"><img src="img/instagram.svg"
+          alt="instagram icon"></a>
+
+      <a href="https://github.com/dvlprdave" target="blank" class="social-icon"><img src="img/github.svg"
+          alt="twitter icon"></a>
     </div>
 
     <p class="copyright">Copyright 2017 David Quick</p>
@@ -245,4 +260,5 @@
 
   <script src="javascript/nav.js"></script>
 </body>
+
 </html>

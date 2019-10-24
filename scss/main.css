@@ -918,6 +918,14 @@ Intro left, middle, right
   }
 }
 
+.portfolio-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  height: 100%;
+}
+
 .portfolio-link {
   color: #ffffff;
   font-weight: 900;

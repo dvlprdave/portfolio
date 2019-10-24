@@ -15,6 +15,7 @@
     overflow: hidden;
     flex: 1 1 20rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: .7rem;
 
     img {
         display: block;
@@ -61,8 +62,21 @@
     }
 }
 
+.portfolio-links {
+    display: flex;
+    height: 100%;
+
+    a:nth-child(1) {
+        padding-right: 1rem;
+    }
+
+    a:nth-child(2) {
+        padding-left: 1rem;
+    }
+}
+
 .portfolio-link {
-    color: $white;
+    color: $gray;
     font-weight: $fw-b;
     font-size: 1.1rem;
     text-decoration: none;
@@ -78,6 +92,10 @@
         height: 1em;
         width: 1em;
         margin-left: .5em;
+    }
+
+    &:hover {
+        color: $accent;
     }
 }
 

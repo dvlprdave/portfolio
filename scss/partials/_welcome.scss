@@ -86,10 +86,10 @@
 .welcome {
     background: linear-gradient(360deg, $dark-blue, $onyx);
     opacity: 1;
-    height: 100vh;
+    height: 90vh;
         // Main navigation
         .nav {
-        @include container ($max-width: 100%)
+        @include container ($max-width: 100%);
         padding-top: 1.5em;
 
         ul {
@@ -121,7 +121,7 @@
     }
 
 
-    @include mquery
+    @include mquery;
     // Intro Paragraph
     .intro-p {
         display: flex;
@@ -131,12 +131,12 @@
         width: 100%;
 
             h1 {
-            font-family: $ff-anton;
-            font-size: 3.8vw;
+            font-family: $ff-s;
+            font-size: 3.4vw;
             font-weight: $fw-n;
             color: $white;
             line-height: 1.3;
-            letter-spacing: .2em;
+            letter-spacing: .1em;
             text-align: justify;
             text-transform: uppercase;
             padding-left: 1em;

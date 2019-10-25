@@ -11,45 +11,39 @@
 }
 
 .portfolio-item {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    flex: 1 1 20rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: .7rem;
 
     img {
         display: block;
         width: 100%;
         height: auto;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     figcaption {
-        position: absolute;
-        top: 100%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        padding: 1em;
-        background: rgba($dark-blue, .95);
-        color: $white;
-        text-align: left;
         display: flex;
         flex-direction: column;
+        align-content: space-between;
         height: 100%;
-        transition: top ease-in-out 250ms;
-    }
-
-    &:hover figcaption,
-    &:focus figcaption {
-        top: 0;
+        color: $white;
+        padding: 1em;
+        text-align: left;
+        background: rgba($dark-blue, .95);
     }
 }
 
 .portfolio-title {
     color: $white;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     padding-bottom: .7rem;
     margin-bottom: auto; // Fills up space and pushes everything down
+}
+
+.portfolio-description {
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -62,37 +56,11 @@
     }
 }
 
-.portfolio-links {
-    display: flex;
-    height: 100%;
-
-    a:nth-child(1) {
-        padding-right: 1rem;
-    }
-
-    a:nth-child(2) {
-        padding-left: 1rem;
-    }
-}
-
 .portfolio-link {
     color: $gray;
     font-weight: $fw-b;
-    font-size: 1.1rem;
+    margin-top: auto;
     text-decoration: none;
-    border-bottom: 3px solid $white;
-    justify-self: flex-end;
-    align-self: flex-start;
-    height: 100%;
-
-    &::after {
-        content: url ('../img/arrow.svg');
-        display: inline-block;
-        color: $white;
-        height: 1em;
-        width: 1em;
-        margin-left: .5em;
-    }
 
     &:hover {
         color: $accent;

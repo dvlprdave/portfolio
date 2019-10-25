@@ -44,6 +44,7 @@
 
 .portfolio-description {
     font-size: 0.9rem;
+    margin-bottom: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,6 +61,7 @@
     color: $gray;
     font-weight: $fw-b;
     margin-top: auto;
+    padding-top: 10px;
     text-decoration: none;
 
     &:hover {

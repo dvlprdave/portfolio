@@ -905,6 +905,7 @@ Intro left, middle, right
 
 .portfolio-description {
   font-size: 0.9rem;
+  margin-bottom: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -920,6 +921,7 @@ Intro left, middle, right
   color: #a7a7a7;
   font-weight: 900;
   margin-top: auto;
+  padding-top: 10px;
   text-decoration: none;
 }
 

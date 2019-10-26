@@ -887,9 +887,11 @@ Intro left, middle, right
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   color: #ffffff;
   padding: 1em;
   text-align: left;
@@ -900,12 +902,10 @@ Intro left, middle, right
   color: #ffffff;
   font-size: 2.2rem;
   padding-bottom: .7rem;
-  margin-bottom: auto;
 }
 
 .portfolio-description {
   font-size: 0.9rem;
-  margin-bottom: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -918,9 +918,12 @@ Intro left, middle, right
 }
 
 .portfolio-link {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #a7a7a7;
   font-weight: 900;
-  margin-top: auto;
   padding-top: 10px;
   text-decoration: none;
 }

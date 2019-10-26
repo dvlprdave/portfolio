@@ -26,8 +26,8 @@
     figcaption {
         display: flex;
         flex-direction: column;
-        align-content: space-between;
-        height: 100%;
+        justify-content: space-between;
+        flex-basis: 100%;
         color: $white;
         padding: 1em;
         text-align: left;
@@ -39,12 +39,10 @@
     color: $white;
     font-size: 2.2rem;
     padding-bottom: .7rem;
-    margin-bottom: auto; // Fills up space and pushes everything down
 }
 
 .portfolio-description {
     font-size: 0.9rem;
-    margin-bottom: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,9 +56,10 @@
 }
 
 .portfolio-link {
+    display: inline-block;
+    width: fit-content;
     color: $gray;
     font-weight: $fw-b;
-    margin-top: auto;
     padding-top: 10px;
     text-decoration: none;
 

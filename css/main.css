@@ -624,7 +624,7 @@ a:hover {
 }
 
 .welcome .intro-p h1 {
-  font-family: "Merriweather", serif;
+  font-family: "Anton", sans-serif;
   font-size: 3.4vw;
   font-weight: 400;
   color: #ffffff;
@@ -633,6 +633,12 @@ a:hover {
   text-align: justify;
   text-transform: uppercase;
   padding-left: 1em;
+}
+
+@media screen and (max-width: 40em) {
+  .welcome .intro-p h1 {
+    font-size: 1.3rem;
+  }
 }
 
 .proposal {
@@ -996,8 +1002,8 @@ footer {
 }
 
 .social-icon {
-  width: 25%;
-  height: 25%;
+  width: 20%;
+  height: 20%;
 }
 
 .copyright::before {

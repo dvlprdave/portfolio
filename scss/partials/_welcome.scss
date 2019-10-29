@@ -131,7 +131,7 @@
         width: 100%;
 
             h1 {
-            font-family: $ff-s;
+            font-family: $ff-anton;
             font-size: 3.4vw;
             font-weight: $fw-n;
             color: $white;
@@ -140,6 +140,12 @@
             text-align: justify;
             text-transform: uppercase;
             padding-left: 1em;
+        }
+
+        @media screen and (max-width: 40em) {
+            h1 {
+                font-size: 1.3rem;
+            }
         }
     }
 }

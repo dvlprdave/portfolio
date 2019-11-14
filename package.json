@@ -1,0 +1,16 @@
+{
+  "name": "final-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dvlprdave/portfolio.git",
+  "author": "David <devdavee@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.1",
+    "parcel-bundler": "^1.12.4"
+  }
+}

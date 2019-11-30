@@ -616,7 +616,7 @@ a:hover {
 
   .about-img {
     grid-column: port/img;
-    grid-row: 2/2;
+    grid-row: 1/2;
   }
   @media screen and (min-width: 50em) {
     .about-img {

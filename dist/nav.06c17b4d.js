@@ -118,15 +118,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"javascript/nav.js":[function(require,module,exports) {
-function openSlideMenu() {
+// Open and close nav menu
+window.openSlideMenu = function openSlideMenu() {
   document.getElementById("side-menu").style.width = "100%";
   document.getElementById("main").style.marginRight = "250px";
-}
+};
 
-function closeSlideMenu() {
+window.closeSlideMenu = function closeSlideMenu() {
   document.getElementById("side-menu").style.width = "0";
   document.getElementById("main").style.marginRight = "0";
-}
+};
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

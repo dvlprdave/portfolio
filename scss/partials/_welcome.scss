@@ -86,7 +86,7 @@
 .welcome {
     background: linear-gradient(360deg, $dark-blue, $onyx);
     opacity: 1;
-    height: 90vh;
+    height: 50vh;
         // Main navigation
         .nav {
         @include container ($max-width: 100%);

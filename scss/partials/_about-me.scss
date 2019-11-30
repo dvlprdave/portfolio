@@ -9,7 +9,7 @@
 
     .about-img {
         grid-column: port / img;
-        grid-row: 1 / 2;
+        grid-row: 2 / 2;
 
         @include mquery {
             grid-row: 1 / 4;
